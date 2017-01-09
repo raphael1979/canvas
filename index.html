@@ -2,18 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script type="text/javascript" src="canvas.js">
-
-		window.onload = function(){
-			var canvas = document.getElementById("paper"),
-			c = canvas.getContext("2d");
-			c.fillstyle ="black";
-			c.fillRect(0, 0, canvas.width, canvas.height);
-
-		};	
-
-	</script>
-
+	
 	<title>canvas</title>
 </head>
 <body>
@@ -63,8 +52,8 @@
 			c.font="80px Helvetica";
 			c.fillText("SIMPL   N", 25, 235);
 			
-			c.strokeStyle = "red";
 			c.beginPath();
+			c.strokeStyle = "red";
 			c.arc(295, 205, 30, 0, Math.PI * 2, false);
 			c.lineWidth = 5;
 			c.stroke();
