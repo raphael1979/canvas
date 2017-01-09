@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="canvas.js">
+
+		window.onload = function(){
+			var canvas = document.getElementById("paper"),
+			c = canvas.getContext("2d");
+			c.fillstyle ="black";
+			c.fillRect(0, 0, canvas.width, canvas.height);
+
+		};	
+
+	</script>
+
+	<title>canvas</title>
+</head>
+<body>
+	<canvas id="paper" width="500" height="500">
+		ici se trouve mon canvas
+	</canvas>
+
+	<script>
+
+
+		window.onload = function(){
+
+			var canvas = document.getElementById("paper"),
+			c = canvas.getContext("2d");
+
+			c.fillStyle = "white";
+			c.fillRect (0, 0, canvas.width, canvas.height);
+
+			c.strokeStyle = "yellow";
+			c.lineWidth = 3;
+			c.beginPath();
+			c.moveTo(12, 190);
+			c.lineTo(20, 105);
+			c.lineTo(295, 30);
+			c.lineTo(410, 175);
+			c.moveTo(410, 335);
+			c.lineTo(325, 425);
+			c.lineTo(12, 300);
+			c.stroke();
+
+			c.strokeStyle = "red";
+			c.lineWidth = 3;
+
+			c.beginPath();
+			c.moveTo(12, 150);
+			c.lineTo(12, 120);
+			c.lineTo(280, 25);
+			c.lineTo(410, 160);
+			c.moveTo(12, 320);
+			c.lineTo(340, 415);
+			c.lineTo(410, 340);
+			c.stroke();
+
+
+			c.beginPath();
+			c.fillStyle="black";
+			c.font="80px Helvetica";
+			c.fillText("SIMPL   N", 25, 235);
+			
+			c.strokeStyle = "red";
+			c.beginPath();
+			c.arc(295, 205, 30, 0, Math.PI * 2, false);
+			c.lineWidth = 5;
+			c.stroke();
+
+			c.beginPath();
+			c.fillStyle= "yellow";
+			c.fillRect(288, 185, 15, 15);
+
+			c.beginPath();
+			c.fillStyle= "yellow";
+			c.fillRect(288, 205, 15, 15);
+
+			c.beginPath();
+			c.fillStyle="red";
+			c.font="60px Helvetica";
+			c.fillText("Occitanie", 140, 280);
+			
+
+			
+
+
+
+		};
+
+
+	</script>
+</body>
+</html>
